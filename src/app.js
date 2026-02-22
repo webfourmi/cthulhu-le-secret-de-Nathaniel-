@@ -10,6 +10,8 @@ const $text = $("#text");
 const $actions = $("#actions");
 const $hp = $("#hp");
 const $time = $("#time");
+const $map = document.querySelector("#map");
+let showHotspotMap = false;
 
 let world, state;
 
