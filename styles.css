@@ -29,3 +29,23 @@ body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial}
 .footer{margin-top:18px;display:flex;gap:8px;flex-wrap:wrap}
 .small{padding:8px 10px;border-radius:10px;border:1px solid #ccc;background:#fff;cursor:pointer}
 .danger{border-color:#d77;color:#900}
+
+/* --- Responsive mobile --- */
+@media (max-width: 900px){
+  .layout{
+    grid-template-columns: 1fr;
+    grid-template-rows: 52vh auto; /* carte en haut, panneau en bas */
+    height: 100vh;
+  }
+
+  .mapWrap{
+    height: 52vh;
+    overflow: auto;
+  }
+
+  .panel{
+    border-left: 0;
+    border-top: 1px solid #ddd;
+    height: 48vh;
+  }
+}
