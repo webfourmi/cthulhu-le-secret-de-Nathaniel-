@@ -38,7 +38,7 @@ function bindFooter(){
       show("Partie chargée. Clique une pièce.");
       document.querySelector("#btnGrid").onclick = ()=>{
        showHotspotMap = !showHotspotMap;
-       $map.src = showHotspotMap ? "assets/plan_hotspots.png" : "assets/plan.png";
+       $map.src = showHotspotMap ? "assets/plan_hotspots.png" : "assets/plan1.png";
 };
     }
   };
