@@ -49,3 +49,23 @@ body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial}
     height: 48vh;
   }
 }
+
+.editorOn .hotspot{ pointer-events:none; } /* en mode édition, on évite de cliquer les hotspots */
+.drawBox{
+  position:absolute;
+  border:2px dashed rgba(255,255,255,.9);
+  background: rgba(255,255,255,.08);
+  border-radius: 10px;
+  pointer-events:none;
+}
+.coordBadge{
+  position:absolute;
+  left:10px; top:10px;
+  background:#fff;
+  border:1px solid #ccc;
+  border-radius:12px;
+  padding:8px 10px;
+  font-size:12px;
+  max-width: 92%;
+}
+.coordBadge code{ font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
