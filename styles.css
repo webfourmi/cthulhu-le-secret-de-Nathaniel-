@@ -69,3 +69,10 @@ body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial}
   max-width: 92%;
 }
 .coordBadge code{ font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+/* --- Mode plein écran carte --- */
+.mapOnly .layout{
+  grid-template-columns: 1fr !important;
+  grid-template-rows: 1fr !important;
+}
+.mapOnly .panel{ display:none; }
+.mapOnly .mapWrap{ height: 100vh !important; }
