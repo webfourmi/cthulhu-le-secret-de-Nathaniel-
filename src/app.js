@@ -47,6 +47,14 @@ function bindFooter(){
       renderHotspots();
       show("Partie chargée. Clique une pièce.");
     }
+    // Plein écran carte
+const btnMap = document.querySelector("#btnMap");
+if(btnMap){
+  btnMap.onclick = ()=>{
+    document.body.classList.toggle("mapOnly");
+    btnMap.textContent = document.body.classList.contains("mapOnly") ? "Retour" : "Plein écran";
+  };
+}
   };
 
   $("#btnReset").onclick = ()=>{
