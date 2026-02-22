@@ -1,1 +1,38 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cthulhu – Le secret de Nataniel</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="layout">
+    <section class="mapWrap" id="mapWrap">
+      <img id="map" src="assets/plan.jpg" alt="Carte" />
+      <div id="hotspots"></div>
+    </section>
 
+    <aside class="panel">
+      <div class="panelTop">
+        <div class="title" id="title">Carte</div>
+        <div class="stats">
+          <span class="pill" id="hp"></span>
+          <span class="pill" id="time"></span>
+        </div>
+      </div>
+
+      <div class="text" id="text">Clique une pièce.</div>
+      <div class="actions" id="actions"></div>
+
+      <div class="footer">
+        <button class="small" id="btnSave">Sauver</button>
+        <button class="small" id="btnLoad">Charger</button>
+        <button class="small danger" id="btnReset">Reset</button>
+      </div>
+    </aside>
+  </main>
+
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>
